@@ -17,3 +17,18 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &w,int &x, int &y, int &z) 
+{
+	int A[4] = {w,x,y,z} ;
+	for(int j=0 ; j < 2 ; j++)
+	{
+		int k = rand()%4 ;
+		int r = rand()%4 ;
+		swap(A[k],A[r]) ;
+	}
+	w = A[0] ;
+	x = A[1] ;
+	y = A[2] ;
+	z = A[3] ;
+}
